@@ -16,7 +16,7 @@ set -e
 get_release() {
 curl --silent \
   -H "Accept: application/vnd.github.v3+json" \
-  https://api.github.com/repos/Ferks-FK/Pterodactyl-AutoThemes/releases/latest |
+  https://api.github.com/repos/NotMinhDucGamingTV/Pterodactyl-AutoThemes/releases/latest |
   grep '"tag_name":' |
   sed -E 's/.*"([^"]+)".*/\1/'
 }
@@ -88,37 +88,40 @@ print_brake 70
 echo
 
 Backup() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/backup.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/backup.sh)
 }
 
 Dracula() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/Dracula/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/Dracula/build.sh)
 }
 
 Enola() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/Enola/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/Enola/build.sh)
 }
 
 Twilight() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/Twilight/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/Twilight/build.sh)
 }
 
 ZingTheme() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/ZingTheme/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/ZingTheme/build.sh)
 }
 
 FlancoTheme() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/FlancoTheme/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/FlancoTheme/build.sh)
 }
 
 BackgroundVideo() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/BackgroundVideo/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/BackgroundVideo/build.sh)
 }
 
 AnimatedGraphics() {
-bash <(curl -s https://raw.githubusercontent.com/Ferks-FK/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/AnimatedGraphics/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/AnimatedGraphics/build.sh)
 }
 
+ZingThemeAndAnimatedGraphics() {
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/AnimatedGraphics/build.sh)
+}
 
 while [ "$done" == false ]; do
   options=(
@@ -130,6 +133,7 @@ while [ "$done" == false ]; do
     "Install Flanco Theme (Only 1.6.6 and 1.7.0)"
     "Install Background Video (Only 1.7.0 and 1.8.1)"
     "Install Animated Graphics (Only 1.6.6 and 1.7.0)"
+    "Install ZingTheme + AnimatedGraphics (Only 1.6.6 and 1.7.0)"
     
     
     "Cancel Installation"
@@ -144,6 +148,7 @@ while [ "$done" == false ]; do
     "FlancoTheme"
     "BackgroundVideo"
     "AnimatedGraphics"
+    "ZingThemeAndAnimatedGraphics"
     
     
     "cancel"
