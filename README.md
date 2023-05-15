@@ -3,8 +3,8 @@
 </h1>
 </br>
 
-![Discord](https://img.shields.io/discord/876934115302178876?label=DISCORD&style=for-the-badge)
-![Contributors](https://img.shields.io/github/contributors/Ferks-FK/Pterodactyl-AutoThemes?style=for-the-badge)
+![Discord](https://img.shields.io/discord/870197933197369394?label=DISCORD&style=for-the-badge)
+![Contributors](https://img.shields.io/github/contributors/NotMinhDucGamingTV/Pterodactyl-AutoThemes?style=for-the-badge)
 
 This is a theme installation script for the [Pterodactyl Panel](https://github.com/pterodactyl/panel).<br> (Modified for custom uses)
 The script installs themes that are compatible with their respective panel versions.
