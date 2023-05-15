@@ -120,7 +120,7 @@ bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-
 }
 
 ZingThemeAndAnimatedGraphics() {
-bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/AnimatedGraphics/build.sh)
+bash <(curl -s https://raw.githubusercontent.com/NotMinhDucGamingTV/Pterodactyl-AutoThemes/"${SCRIPT_VERSION}"/themes/version1.x/ZingThemeMod/build.sh)
 }
 
 while [ "$done" == false ]; do
