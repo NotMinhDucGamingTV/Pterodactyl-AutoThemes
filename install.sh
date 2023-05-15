@@ -133,7 +133,7 @@ while [ "$done" == false ]; do
     "Install Flanco Theme (Only 1.6.6 and 1.7.0)"
     "Install Background Video (Only 1.7.0 and 1.8.1)"
     "Install Animated Graphics (Only 1.6.6 and 1.7.0)"
-    "Install ZingTheme + AnimatedGraphics (Only 1.6.6 and 1.7.0)"
+    "Install ZingTheme + AnimatedGraphics (Only 1.11.3)"
     
     
     "Cancel Installation"
